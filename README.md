@@ -432,18 +432,6 @@ SABD2026_ML/
     ├── spectrum_comparison_sample_5.png       # Сравнение спектров
     ├── model_comparison_metrics.png           # Сравнение метрик
     └── r2_per_target.png                      # R² по каждой цели
-├── README.md
-├── pyproject.toml
-├── .gitignore
-├── notebooks/
-│   └── ML.ipynb
-├── data/
-│   └── normalized_inputs_and_targets_gsf.csv
-├── models/
-│   └── random_forest_model.joblib
-├── results/
-│   └── spectrum_*.png
-└── src/
 ```
 
 ---
