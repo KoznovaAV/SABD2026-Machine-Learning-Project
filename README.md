@@ -159,12 +159,12 @@ Extra Trees (Extremely Randomized Trees) вносит дополнительну
 
 ```python
 ExtraTreesRegressor(
-    n_estimators=50,
-    max_depth=15,
-    min_samples_split=10,
-    min_samples_leaf=5,
-    random_state=42,
-    n_jobs=-1
+    n_estimators=50,           # Количество деревьев в лесу
+    max_depth=15,              # Максимальная глубина каждого дерева
+    min_samples_split=10,      # Минимальное число образцов для разделения узла
+    min_samples_leaf=5,        # Минимальное число образцов в листе
+    random_state=42,           # Фиксация случайности
+    n_jobs=-1                  # Использование всех ядер процессора
 )
 ```
 
