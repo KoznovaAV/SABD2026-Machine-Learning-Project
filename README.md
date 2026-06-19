@@ -191,7 +191,7 @@ HistGradientBoostingRegressor(
     learning_rate=0.1,         # Скорость обучения
     l2_regularization=0.1,     # L2-регуляризация
     max_bins=255,              # Количество бинов для дискретизации
-    random_state=42
+    random_state=42            # Фиксация случайности
 )
 ```
 
