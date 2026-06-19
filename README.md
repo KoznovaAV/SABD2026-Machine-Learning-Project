@@ -408,6 +408,7 @@ MAE измеряет среднюю абсолютную разность меж
 SABD2026_ML/
 ├── README.md                                  # Документация проекта
 ├── pyproject.toml                             # Конфигурация и зависимости
+├── requirements.txt                           # Список зависимостей для pip
 ├── .gitignore                                 # Исключения для Git
 ├── .python-version                            # Версия Python
 │
@@ -443,13 +444,23 @@ SABD2026_ML/
 git clone https://github.com/твой-username/SABD2026_ML.git
 cd SABD2026_ML
 
-# 2. Установить зависимости (через pip)
+# 2. (Рекомендуется) Создать виртуальное окружение
+python -m venv venv
+source venv/bin/activate         # Linux / macOS
+venv\Scripts\activate            # Windows
+
+# 3. Установить зависимости (выбери ОДИН из способов)
+
+# Способ 1: через requirements.txt (проще)
+pip install -r requirements.txt
+
+# Способ 2: через pyproject.toml (рекомендуется)
 pip install -e .
 
-# Или через uv (рекомендуется):
+# Способ 3: через uv (быстро)
 uv sync
 
-# 3. Запустить Jupyter Notebook
+# 4. Запустить Jupyter Notebook
 jupyter notebook notebooks/01_random_forest.ipynb
 ```
 
