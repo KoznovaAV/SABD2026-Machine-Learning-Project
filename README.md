@@ -449,15 +449,15 @@ python -m venv venv
 source venv/bin/activate         # Linux / macOS
 venv\Scripts\activate            # Windows
 
-# 3. Установить зависимости (выбери ОДИН из способов)
+# 3. Установить зависимости (один из способов)
 
-# Способ 1: через requirements.txt (проще)
+# Способ 1: через requirements.txt 
 pip install -r requirements.txt
 
-# Способ 2: через pyproject.toml (рекомендуется)
+# Способ 2: через pyproject.toml 
 pip install -e .
 
-# Способ 3: через uv (быстро)
+# Способ 3: через uv
 uv sync
 
 # 4. Запустить Jupyter Notebook
